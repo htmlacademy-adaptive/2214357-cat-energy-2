@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/180.png"><!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -40,7 +44,14 @@
         <h1 class="hero__title">Функциональное
           питание для котов</h1>
         <p class="hero__description">Занялся собой? Займись котом!</p>
-        <img class="hero__image" src="#" width="280" height="270" alt="Банка питания для котов">
+        <picture>
+          <source media="(min-width: 1440px)" width="552" height="499" type="image/webp" srcset="./images/hero-desctop@1x.webp 1x, ./images/hero-desctop@2x.webp 2x">
+          <source media="(min-width: 768px)" width="709" height="609" type="image/webp" srcset="./images/hero-tablet@1x.webp 1x, ./images/hero-tablet@2x.webp 2x">
+          <source width="280" height="270" type="image/webp" srcset="./images/hero-tablet@1x.webp 1x, ./images/hero-tablet@2x.webp 2x">
+          <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="./images/hero-desctop@1x.png 1x, ./images/hero-desctop@2x.png 2x">
+          <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="./images/hero-tablet@1x.png 1x, ./images/hero-tablet@2x.png 2x">
+          <img class="hero__image" src="./images/hero-mobile@1x.png" srcset="./images/hero-mobile@2x.png 2x" width="280" height="270" alt="Банка питания для котов">
+        </picture>
         <a class="button button--primary" href="#">Подобрать программу</a>
       </div>
     </section>
@@ -101,8 +112,22 @@
         </dl>
         <div class="advantages__slider slider">
           <div class="slider__wrapper">
-            <img class="slider__image slider__image--before" src="#" width="280" height="256" alt="Худой кот">
-            <img class="slider__image slider__image--after" src="#" width="280" height="256" alt="Толстый кот">
+            <picture>
+              <source media="(min-width: 1440px)" width="560" height="512" type="image/webp" srcset="./images/small-cat-tablet@1x.webp 1x, ./images/small-cat-tablet@2x.webp 2x">
+              <source media="(min-width: 768px)" width="560" height="512" type="image/webp" srcset="./images/small-cat-tablet@1x.webp 1x, ./images/small-cat-tablet@2x.webp 2x">
+              <source width="280" height="256" type="image/webp" srcset="./images/small-cat-tablet@1x.webp 1x, ./images/small-cat-tablet@2x.webp 2x">
+              <source media="(min-width: 1440px)" width="560" height="512" type="image/png" srcset="./images/small-cat-tablet@1x.webp 1x, ./images/small-cat-tablet@2x.webp 2x">
+              <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="./images/small-cat-tablet@1x.png 1x, ./images/small-cat-tablet@2x.png 2x">
+              <img class="slider__image slider__image--before" src="./images/small-cat-mobile@1x.png" srcset="./images/small-cat-mobile@2x.png 2x" width="280" height="256" alt="Худой кот">
+            </picture>
+            <picture>
+              <source media="(min-width: 1440px)" width="560" height="512" type="image/webp" srcset="./images/big-cat-tablet@1x.webp 1x, ./images/big-cat-tablet@2x.webp 2x">
+              <source media="(min-width: 768px)" width="560" height="512" type="image/webp" srcset="./images/big-cat-tablet@1x.webp 1x, ./images/big-cat-tablet@2x.webp 2x">
+              <source width="280" height="256" type="image/webp" srcset="./images/big-cat-tablet@1x.webp 1x, ./images/big-cat-tablet@2x.webp 2x">
+              <source media="(min-width: 1440px)" width="560" height="512" type="image/png" srcset="./images/big-cat-tablet@1x.webp 1x, ./images/big-cat-tablet@2x.webp 2x">
+              <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="./images/big-cat-tablet@1x.png 1x, ./images/big-cat-tablet@2x.png 2x">
+              <img class="slider__image slider__image--after" src="./images/big-cat-mobile@1x.png" srcset="./images/big-cat-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот">
+            </picture>
             <button class="slider__toggle" type="button">
               <span class="visually-hidden">Ползунок</span>
             </button>
@@ -119,7 +144,14 @@
         </address>
       </div>
       <div class="contacts__map">
-        <img class="contacts-image" src="#" width="320" height="362" alt="Схема проезда">
+        <picture>
+          <source media="(min-width: 1440px)" width="1440" height="400" type="image/webp" srcset="./images/map-desctop@1x.webp 1x, ./images/map-desctop@2x.webp 2x">
+          <source media="(min-width: 768px)" width="768" height="400" type="image/webp" srcset="./images/map-tablet@1x.webp 1x, ./images/map-tablet@2x.webp 2x">
+          <source width="320" height="362" type="image/webp" srcset="./images/map-mobile@1x.webp 1x, ./images/map-mobile@2x.webp 2x">
+          <source media="(min-width: 1440px)" width="1440" height="400" type="image/png" srcset="./images/map-desctop@1x.png 1x, ./images/map-desctop@2x.png 2x">
+          <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="./images/map-tablet@1x.png 1x, ./images/map-tablet@2x.png 2x">
+          <img class="contacts-image" src="./images/map-mobile@1x.png" srcset="./images/map-mobile@2x.png 2x" width="320" height="362" alt="Схема проезда">
+        </picture>
       </div>
     </section>
   </main>
