@@ -24,7 +24,7 @@
         <button class="main-nav__toggle  button-reset" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list list-none">
+        <ul class="main-nav__list list-reset">
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--current" href="#">Главная</a>
           </li>
@@ -41,31 +41,31 @@
   <main class="main-container">
     <section class="hero">
       <div class="hero__wrapper">
-        <h1 class="hero__title">Функциональное
+        <h1 class="hero__title title">Функциональное
           питание для котов</h1>
         <p class="hero__description">Занялся собой? Займись котом!</p>
         <picture>
           <source media="(min-width: 1440px)" width="552" height="499" type="image/webp" srcset="./images/hero-desktop@1x.webp 1x, ./images/hero-desktop@2x.webp 2x">
           <source media="(min-width: 768px)" width="709" height="609" type="image/webp" srcset="./images/hero-tablet@1x.webp 1x, ./images/hero-tablet@2x.webp 2x">
-          <source width="280" height="270" type="image/webp" srcset="./images/hero-tablet@1x.webp 1x, ./images/hero-tablet@2x.webp 2x">
+          <source width="280" height="270" type="image/webp" srcset="./images/hero-mobile@1x.webp 1x, ./images/hero-mobile@2x.webp 2x">
           <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="./images/hero-desktop@1x.png 1x, ./images/hero-desktop@2x.png 2x">
           <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="./images/hero-tablet@1x.png 1x, ./images/hero-tablet@2x.png 2x">
           <img class="hero__image" src="./images/hero-mobile@1x.png" srcset="./images/hero-mobile@2x.png 2x" width="280" height="270" alt="Банка питания для котов">
         </picture>
-        <a class="button button--primary" href="#">Подобрать программу</a>
       </div>
+      <a class="button button--primary" href="#">Подобрать программу</a>
     </section>
     <section class="programs">
       <h2 class="visually-hidden">программы питания</h2>
       <div class="programs__wrapper">
-        <ul class="programs__list list-none">
+        <ul class="programs__list list-reset">
           <li class="programs__item programs__item--slim">
-            <h3 class="programs__title">Похудение</h3>
+            <h3 class="programs__title title title--medium">Похудение</h3>
             <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="programs__link" href="#">Каталог slim</a>
           </li>
           <li class="programs__item programs__item--pro">
-            <h3 class="programs__title">Похудение</h3>
+            <h3 class="programs__title title title--medium">Набор массы</h3>
             <p class="programs__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="programs__link" href="#">Каталог pro</a>
           </li>
@@ -74,8 +74,8 @@
     </section>
     <section class="instructions">
       <div class="instructions-wrapper">
-        <h2 class="instructions-title">Как это работает</h2>
-        <ul class="instructions__list list-none">
+        <h2 class="instructions__title title">Как это работает</h2>
+        <ul class="instructions__list list-reset">
           <!-- модификаторы добавлю позже при стилизации. ругаются линтеры. -->
           <li class="instructions__item">
             <p class="instructions__description">Функциональное питание содержит только полезные питательные вещества.</p>
@@ -94,22 +94,22 @@
     </section>
     <section class="advantages">
       <div class="advantages__wrapper">
-        <h2 class="advantages__title">Живой пример</h2>
+        <h2 class="advantages__title title">Живой пример</h2>
         <p class="advantages__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <dl class="advantages-list">
+        <div class="advantages-list">
           <div class="advantages-item">
-            <dt class="advantages-number">5 КГ</dt>
-            <dd class="advantages-description">снижение веса</dd>
+            <span class="advantages__number">5 КГ</span>
+            <span class="advantages__description">снижение веса</span>
           </div>
           <div class="advantages-item">
-            <dt class="advantages-number">60 ДНЕЙ</dt>
-            <dd class="advantages-description">затрачено времени</dd>
+            <span class="advantages__number">60 ДНЕЙ</span>
+            <span class="advantages__description">затрачено времени</span>
           </div>
-          <div class="advantages-price">
-            <dt class="advantages-text">Затраты на питание:</dt>
-            <dd class="advantages-price">15 000 РУБ.</dd>
+          <div class="advantages__price">
+            <span>Затраты на питание:</span>
+            <span>15 000 РУБ.</span>
           </div>
-        </dl>
+        </div>
         <div class="advantages__slider slider">
           <div class="slider__wrapper">
             <picture>
@@ -160,7 +160,7 @@
       <a class="footer__logo" href="index.html">
         <img class="footer__logo-image" src="#" width="128" height="24" alt="Логотип компании">
       </a>
-      <ul class="footer__social social list-none">
+      <ul class="footer__social social list-reset">
         <li class="social__item">
           <a class="social__link" href="#">
             <span class="visually-hidden">Вконтакте</span>

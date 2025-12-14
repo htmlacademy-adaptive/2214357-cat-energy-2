@@ -1,0 +1,32 @@
+.button {
+  font-family: $font-secondary;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-basic-white;
+  background-color: $color-basic-green;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-dark-green;
+  }
+
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--secondary {
+    color: $color-special-dark-grey;
+    background-color: $bg-basic-grey;
+  }
+}

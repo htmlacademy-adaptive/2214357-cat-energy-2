@@ -1,0 +1,17 @@
+.additional {
+  position: relative;
+}
+
+.additional__title {
+  padding-right: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 30px;
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 70px;
+    padding-left: 40px;
+  }
+}

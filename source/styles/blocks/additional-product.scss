@@ -1,0 +1,40 @@
+.additional-product {
+  border-bottom: 1px solid $color-light-grey;
+
+  &:nth-child(1) {
+    border-top: 1px solid $color-light-grey;
+  }
+}
+
+.additional-product__title {
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $color-special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.additional-product__text {
+  line-height: 20px;
+  color: $color-special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
+}
+
+.additional-product__value {
+  line-height: 14px;
+  text-align: right;
+  color: $color-special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

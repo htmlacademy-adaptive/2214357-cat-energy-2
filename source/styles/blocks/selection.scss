@@ -1,0 +1,22 @@
+.selection__title {
+  font-family: $font-secondary;
+  font-size: 36px;
+  line-height: 36px;
+  color: $color-basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.selection__description {
+  font-family: $font-secondary;
+  color: $color-basic-black;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

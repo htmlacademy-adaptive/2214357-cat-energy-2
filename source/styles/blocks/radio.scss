@@ -1,0 +1,11 @@
+.radio__label {
+  font-family: $font-secondary;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $color-special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

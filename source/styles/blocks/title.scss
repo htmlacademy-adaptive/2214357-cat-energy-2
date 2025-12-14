@@ -1,0 +1,52 @@
+.title {
+  font-family: $font-secondary;
+  font-size: 36px;
+  line-height: 36px;
+  color: $color-basic-black;
+  background-color: $color-basic-white;
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0;
+
+  &--small {
+    font-family: $font-secondary;
+    font-size: 24px;
+    line-height: 24px;
+    color: $color-basic-black;
+    background-color: $color-basic-white;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0;
+
+    @media (min-width: $tablet-width) {
+      font-size: 32px;
+      line-height: 32px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+
+  &--medium {
+    font-family: $font-secondary;
+    font-size: 24px;
+    line-height: 24px;
+    color: $color-basic-black;
+    background-color: $color-basic-white;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0;
+
+    @media (min-width: $tablet-width) {
+      font-size: 36px;
+      line-height: 36px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}

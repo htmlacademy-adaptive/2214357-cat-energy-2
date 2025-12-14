@@ -1,0 +1,11 @@
+.products__item {
+  border-bottom: 1px solid $color-light-grey;
+
+  &:first-child {
+    border-top: 1px solid $color-light-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}

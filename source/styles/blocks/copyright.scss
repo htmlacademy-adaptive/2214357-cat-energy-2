@@ -1,0 +1,9 @@
+.copyright__name {
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-basic-grey;
+
+  &:active {
+    opacity: 0.3;
+  }
+}

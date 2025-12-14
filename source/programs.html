@@ -24,7 +24,7 @@
         <button class="main-nav__toggle  button-reset" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list list-none">
+        <ul class="main-nav__list list-reset">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
@@ -38,15 +38,14 @@
       </nav>
     </div>
   </header>
-
-  <main class="programs">
+  <main class="main-form">
     <section class="selection">
-      <h2 class="selection__title">Подбор программы</h2>
+      <h1 class="selection__title title">Подбор программы</h1>
       <p class="selection__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="selection__form form" action="https://htmlacademy.ru/" method="post">
         <fieldset class="form__group">
           <legend class="form__group-title visually-hidden">Профиль</legend>
-          <ul class="form__group-list">
+          <ul class="form__group-list list-reset">
             <li class="form__group-item field">
               <label class="field__name">
                 <span class="field__label">ИМЯ:*</span>
@@ -69,7 +68,7 @@
         </fieldset>
         <fieldset class="form__group">
           <legend class="form__group-title visually-hidden">Программы</legend>
-          <ul class="form__group-list">
+          <ul class="form__group-list list-reset">
             <li class="form__group-item radio">
               <label class="radio__name">
                 <input class="radio__input input" type="radio" name="type" checked>
@@ -91,8 +90,9 @@
           </ul>
         </fieldset>
         <fieldset class="form__group">
-          <legend class="form__group-title">Контактные данные (владельца кота)</legend>
-          <ul class="form__group-list">
+          <legend class="form__group-title title title--medium">Контактные данные (владельца кота)</legend>
+          <div class="title-line title-line--form"></div>
+          <ul class="form__group-list list-reset">
             <li class="form__group-item field">
               <label class="field__name">
                 <span class="field__label">E-mail:*</span>
@@ -108,13 +108,14 @@
           </ul>
         </fieldset>
         <fieldset class="form__group">
-          <legend class="form__group-title">Комментарий</legend>
-          <textarea class="textarea" name="comment" id="comment" rows="5" cols="35">Расскажите обо всех повадках кота</textarea>
+          <legend class="form__group-title title title--medium">Комментарий</legend>
+          <div class="title-line title-line--form"></div>
+          <textarea class="form__textarea" name="comment" id="comment" rows="5" cols="35">Расскажите обо всех повадках кота</textarea>
         </fieldset>
-
         <fieldset class="form__group">
-          <legend class="form__group-title">Дополнительно</legend>
-          <ul class="form__group-list">
+          <legend class="form__group-title title title--medium">Дополнительно</legend>
+          <div class="title-line title-line--form"></div>
+          <ul class="form__group-list list-reset">
             <li class="form__group-item checkbox">
               <label class="checkbox__name">
                 <input class="checkbox__input input" type="checkbox" name="sweetener" checked>
@@ -170,7 +171,7 @@
       <a class="footer__logo" href="index.html">
         <img class="footer__logo-image" src="#" width="128" height="24" alt="Логотип компании">
       </a>
-      <ul class="footer__social social list-none">
+      <ul class="footer__social social list-reset">
         <li class="social__item">
           <a class="social__link" href="#">
             <span class="visually-hidden">Вконтакте</span>
