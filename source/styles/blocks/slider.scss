@@ -1,3 +1,81 @@
-.slider {
-  box-sizing: border-box;
+.slider__wrapper {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  max-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 560px;
+  }
+}
+
+.slider__line {
+  display: block;
+  width: 4px;
+  height: 100%;
+  background: $color-bg-grey;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.slider__image {
+  display: block;
+
+  &--after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: inset(0 50% 0 0);
+  }
+
+  &--before {
+    clip-path: inset(0 0 0 50%);
+  }
+}
+
+.slider__toggle {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background-color: $color-basic-white;
+  border-radius: 50%;
+  border: 2px solid $color-bg-grey;
+  z-index: 1;
+
+  &:hover {
+    border: 2px solid $color-basic-green;
+  }
+
+  &:hover + .slider__line {
+    background: $color-basic-green;
+  }
+
+  &:hover > .slider__toggle-image {
+    fill: $color-basic-green;
+  }
+
+  &:active {
+    border: 2px solid $color-dark-green;
+  }
+
+  &:active + .slider__line {
+    background: $color-dark-green;
+  }
+
+  &:active > .slider__toggle-image {
+    fill: $color-dark-green;
+  }
+}
+
+.slider__toggle-image {
+  display: block;
+  fill: $color-bg-grey;
 }

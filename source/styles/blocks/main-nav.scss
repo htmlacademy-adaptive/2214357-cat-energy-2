@@ -1,11 +1,55 @@
+.main-nav {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 1px;
+  }
+
+  &--programs {
+    @media (min-width: $tablet-width) {
+      margin-right: 1px;
+    }
+  }
+}
+
+.main-nav__item {
+  display: flex;
+  justify-content: center;
+  padding: 22px 20px 24px;
+  border-top: 1px solid $color-border-grey-line;
+
+  &:last-child {
+    border-bottom: 1px solid $color-border-grey-line;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    border: none;
+    padding: 0;
+  }
+}
+
 .main-nav__link {
   font-family: $font-secondary;
+  width: 100%;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
   color: $color-basic-black;
   text-align: center;
+  justify-content: center;
   text-decoration: none;
+  display: inline-flex;
 
   &:hover {
     opacity: 0.7;
@@ -19,27 +63,146 @@
     opacity: 0.3;
   }
 
+  &--index {
+    @media (min-width: $desktop-width) {
+      color: $color-basic-white;
+    }
+  }
+
+  &--current {
+    @media (min-width: $tablet-width) {
+      border-bottom: 2px solid $color-basic-green;
+    }
+  }
+
+  &--current-index {
+    @media (min-width: $tablet-width) {
+      border-bottom: 2px solid $color-basic-green;
+    }
+
+    @media (min-width: $desktop-width) {
+      border-bottom: 2px solid $color-basic-white;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
+    padding: 8px 0;
   }
-
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 20px;
-    // color: $color-basic-white;
+    padding: 11px 0;
   }
 }
 
-.main-nav__link--current {
-  @media (min-width: $tablet-width) {
-    border-bottom: 2px solid $color-basic-green;
-    // padding-bottom: 6px;
-  }
+.main-nav--opened .main-nav__toggle {
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-image: url("../../icons/toggle-close.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-color: inherit;
+  border: none;
+  position: absolute;
+  top: 23px;
+  right: 20px;
 
-  // @media (min-width: $desktop-width) {
-  //   border-bottom: 2px solid $color-basic-white;
-  //   padding-bottom: 6px;
-  // }
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav .main-nav__toggle {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../icons/toggle-open.svg");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-color: inherit;
+  border: none;
+  position: absolute;
+  top: 20px;
+  right: 21px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__list {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-basic-white;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  right: 0;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    flex-grow: 0;
+    gap: 34px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.main-nav .main-nav__list {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    position: static;
+    justify-content: end;
+    flex-flow: row wrap;
+    flex-grow: 0;
+    gap: 33px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__list {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-basic-white;
+  z-index: 1;
+  min-width: 100%;
+  flex: 0 0 100%;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    justify-content: end;
+    flex-flow: row wrap;
+    flex-grow: 0;
+    gap: 33px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.main-nav--nojs .main-nav__item {
+  margin: 0 -20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }

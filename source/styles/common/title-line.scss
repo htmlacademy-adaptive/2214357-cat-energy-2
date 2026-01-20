@@ -3,16 +3,43 @@
   width: 100%;
   height: 2px;
   background-color: $color-basic-green;
-  top: 12px;
+  top: 9px;
+  left: 0;
   z-index: -1;
 
-
   @media (min-width: $tablet-width) {
-    top: 20px;
+    top: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 16px;
   }
 
   &--form {
-    display: inline-block;
-    top: -12px;
+    top: 41px;
+
+    @media (min-width: $tablet-width) {
+      top: 37px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 13px;
+    }
+  }
+
+  &--coment {
+    top: 18px;
+
+    @media (min-width: $tablet-width) {
+      top: 44px;
+    }
+  }
+
+  &--additional {
+    top: 21px;
+
+    @media (min-width: $tablet-width) {
+      top: 54px;
+    }
   }
 }

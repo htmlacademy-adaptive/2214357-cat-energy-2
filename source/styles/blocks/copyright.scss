@@ -1,9 +1,37 @@
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
 .copyright__name {
   font-size: 16px;
   line-height: 20px;
   color: $color-basic-grey;
 
   &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__logo {
+  fill: $color-bg-grey;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 23px;
+  }
+
+  &:hover {
+    fill: $color-basic-green;
+  }
+
+  &:active {
+    fill: $color-basic-green;
     opacity: 0.3;
   }
 }

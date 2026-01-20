@@ -1,8 +1,13 @@
+.checkbox__name {
+  display: flex;
+  align-items: center;
+}
+
 .checkbox__label {
   font-family: $font-secondary;
   font-size: 16px;
   text-transform: uppercase;
-  color: $color-special-dark-grey;
+  color: $color-basic-grey;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
