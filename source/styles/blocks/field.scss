@@ -86,3 +86,19 @@
     }
   }
 }
+
+.field__input--error {
+  outline: 2px solid $color-border-red-light;
+}
+
+.field__input--error + .field__input-icon {
+  background-color: $color-border-red-light;
+}
+
+.field__input--valid {
+  outline: 2px solid $color-basic-grey;
+}
+
+.field__input--valid + .field__input-icon {
+  background-color: $color-basic-green;
+}

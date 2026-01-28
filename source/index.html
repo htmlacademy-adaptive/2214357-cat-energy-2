@@ -14,7 +14,7 @@
 </head>
 
 <body class="page__body">
-  <header class="header container">
+  <header class="header container" data-test="header">
     <div class="header__wrapper">
       <a class="header__logo " href="index.html">
         <picture>
@@ -46,8 +46,8 @@
       </ul>
     </nav>
   </header>
-  <main class="main">
-    <section class="hero container">
+  <main class="main" data-test="main">
+    <section class="hero container" data-test="hero">
       <div class="hero__wrapper">
         <h1 class="hero__title title">Функциональное питание для котов</h1>
         <p class="hero__description">Занялся собой? Займись котом!</p>
@@ -62,7 +62,7 @@
         <a class="button button--primary hero__button" href="#">Подобрать программу</a>
       </div>
     </section>
-    <section class="programs">
+    <section class="programs" data-test="programs">
       <h2 class="visually-hidden">программы питания</h2>
       <div class="programs__wrapper container">
         <ul class="programs__list list-reset">
@@ -79,7 +79,7 @@
         </ul>
       </div>
     </section>
-    <section class="instructions">
+    <section class="instructions" data-test="instructions">
       <div class="instructions__wrapper container">
         <h2 class="instructions__title title">Как это работает</h2>
         <ul class="instructions__list list-reset">
@@ -98,7 +98,7 @@
         </ul>
       </div>
     </section>
-    <section class="advantages">
+    <section class="advantages" data-test="advantages">
       <div class="advantages__wrapper container">
         <div class="advantages__content-wrrapper">
           <h2 class="advantages__title title">Живой пример</h2>
@@ -148,10 +148,9 @@
             <div class="slider__line"></div>
           </div>
         </div>
-
       </div>
     </section>
-    <section class="contacts">
+    <section class="contacts" data-test="contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__wrapper">
         <p class="contacts__text">Приглашаем<br> к сотрудничеству дилеров!</p>
@@ -168,11 +167,11 @@
           <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="./images/map-tablet@1x.png 1x, ./images/map-tablet@2x.png 2x">
           <img class="contacts__image" src="./images/map-mobile@1x.png" srcset="./images/map-mobile@2x.png 2x" width="320" height="362" alt="Схема проезда" loading="lazy">
         </picture>
-        <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.822607321338!2d30.317408900000004!3d59.968266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sby!4v1767798115720!5m2!1sru!2sby" width="100%" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.822607321338!2d30.317408900000004!3d59.968266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sby!4v1767798115720!5m2!1sru!2sby" width="320" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer" data-test="footer">
     <div class="footer__wrapper container">
       <a class="footer__logo" href="index.html">
         <img class="footer__logo-text" src="./images/logo-text-mobile.svg" width="128" height="24" alt="Cat Energy">
