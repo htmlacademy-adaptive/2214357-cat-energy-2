@@ -1,0 +1,145 @@
+.instructions {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $color-border-grey-line;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    margin-bottom: 21px;
+  }
+}
+
+.instructions__wrapper {
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 7px;
+  }
+}
+
+.instructions__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+  }
+}
+
+.instructions__item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+
+  &--first {
+    --images: url("../../icons/stack.svg#instructions-first");
+    --number: "1";
+    --position: 25px;
+  }
+
+  &--second {
+    --images: url("../../icons/instructions-second.svg");
+    --number: "2";
+    --position: 0;
+  }
+
+  &--third {
+    --images: url("../../icons/instructions-third.svg");
+    --number: "3";
+    --position: 0;
+  }
+
+  &--fourth {
+    --images: url("../../icons/instructions-fourth.svg");
+    --number: "4";
+    --position: 0;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    background-image: var(--images);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 30px 32px;
+    background-color: $color-basic-green;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      align-self: start;
+    }
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: var(--number);
+      display: block;
+      position: absolute;
+      top: -40px;
+      right: var(--position);
+      font-family: $font-secondary;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 280px;
+      color: $bg-basic-grey;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    max-width: 250px;
+    min-height: 280px;
+  }
+}
+
+.instructions__title {
+  line-height: 40px;
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+    line-height: 60px;
+  }
+}
+
+.instructions__description {
+  color: $color-basic-grey;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 10px;
+  }
+}
+
+.instructions__description-br {
+  display: none;
+
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}

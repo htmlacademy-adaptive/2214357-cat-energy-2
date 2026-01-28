@@ -1,0 +1,18 @@
+.description-product__item {
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-special-dark-grey;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    border-bottom: 1px solid $color-special-grey;
+    padding: 5px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 5px 0 7px;
+  }
+}

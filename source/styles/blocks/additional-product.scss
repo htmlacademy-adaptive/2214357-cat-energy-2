@@ -1,0 +1,115 @@
+.additional-product {
+  border-bottom: 1px solid $color-light-grey;
+  padding-top: 14px;
+  padding-bottom: 19px;
+
+  &:nth-child(1) {
+    border-top: 1px solid $color-light-grey;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 13px;
+      border-top: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      border-top: 1px solid $color-light-grey;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    padding: 26px 38px 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 244px;
+    align-items: center;
+    padding: 15px 0 16px;
+  }
+}
+
+.additional-product__item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
+}
+
+.additional-product__title {
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: inherit;
+  text-transform: uppercase;
+  color: $color-special-dark-grey;
+  margin: 0;
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 0;
+  }
+}
+
+.additional-product__container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 285px;
+    margin: 0;
+    margin-right: 40px;
+  }
+}
+
+.additional-product__text {
+  line-height: 20px;
+  color: $color-special-dark-grey;
+  margin-top: -3px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    margin-top: 1px;
+    align-self: flex-end;
+  }
+}
+
+.additional-product__value {
+  line-height: 14px;
+  text-align: right;
+  color: $color-special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 50px;
+
+    &--secondary {
+      margin-left: 61px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    margin-left: 0;
+    min-width: 42px;
+  }
+}
+
+.additional-product__button {
+  font-size: 16px;
+  line-height: 20px;
+  display: block;
+  width: 100%;
+}

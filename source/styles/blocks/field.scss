@@ -1,0 +1,104 @@
+.field {
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.field__name {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.field__label {
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $color-basic-grey;
+  flex-shrink: 0;
+  margin-right: 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.field__input {
+  width: 100%;
+  padding: 13px 30px 13px 15px;
+  margin: 0;
+
+  &:focus {
+    outline: 2px solid $color-basic-grey;
+  }
+
+  &:focus:invalid {
+    outline: 2px solid $color-border-red-light;
+  }
+
+  &:focus:invalid + .field__input-icon {
+    background-color: $color-border-red-light;
+  }
+
+  &:focus:valid + .field__input-icon {
+    background-color: $color-basic-green;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 40px 11px 20px;
+  }
+}
+
+.field__input-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  mask-repeat: no-repeat;
+  background-color: $color-special-dark-grey;
+
+  &--email {
+    right: 12px;
+    width: 20px;
+    height: 26px;
+    mask-image: url("../../icons/stack.svg#email");
+
+    @media (min-width: $tablet-width) {
+      right: 16px;
+    }
+  }
+
+  &--phone {
+    right: 13px;
+    width: 20px;
+    height: 20px;
+    mask-image: url("../../icons/stack.svg#phone");
+
+    @media (min-width: $tablet-width) {
+      right: 16px;
+    }
+  }
+}
+
+.field__input--error {
+  outline: 2px solid $color-border-red-light;
+}
+
+.field__input--error + .field__input-icon {
+  background-color: $color-border-red-light;
+}
+
+.field__input--valid {
+  outline: 2px solid $color-basic-grey;
+}
+
+.field__input--valid + .field__input-icon {
+  background-color: $color-basic-green;
+}

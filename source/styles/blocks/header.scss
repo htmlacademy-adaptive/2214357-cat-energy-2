@@ -1,5 +1,82 @@
 .header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+  border-bottom: 1px solid $color-border-grey-light;
+
+  &--inner {
+    @media (min-width: $tablet-width) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 110px;
+      padding-right: 110px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 55px;
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 13px;
+  position: relative;
+  padding-bottom: 9px;
+
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.header__logo {
+  display: flex;
+  flex-grow: 0;
+  align-items: center;
+  align-self: flex-start;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.header__logo-text {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 12px;
+  width: 101px;
+  height: 18px;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    transform: none;
+    margin-top: -5px;
+    margin-left: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 14px;
+    margin-top: 0;
+    width: 118px;
+    height: 21px;
+  }
 }

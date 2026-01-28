@@ -1,0 +1,52 @@
+.footer {
+  background-color: $bg-basic-grey;
+}
+
+.footer__wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+    padding-bottom: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 66px;
+    padding-bottom: 66px;
+  }
+}
+
+.footer__logo {
+  @media (min-width: $tablet-width) {
+    margin-top: 4px;
+  }
+
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.footer__logo-text {
+  display: block;
+  justify-self: center;
+  margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 2;
+    margin-bottom: 0;
+  }
+}

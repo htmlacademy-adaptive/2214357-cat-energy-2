@@ -1,7 +1,8 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Виталий Макаров](https://up.htmlacademy.ru/adaptive-individual/2/user/2214357).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Хабиров](https://htmlacademy.ru/profile/alex_khab)
+* Сайт: [Проект CAT ENERGY](https://vitali3207.github.io/2214357-cat-energy-2/)
 
 ---
 

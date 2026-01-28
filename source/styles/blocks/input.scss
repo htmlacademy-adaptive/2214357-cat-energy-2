@@ -1,0 +1,95 @@
+.input {
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $color-basic-grey;
+  border: 1px solid $color-border-grey;
+  outline: none;
+  box-sizing: border-box;
+
+  &::placeholder {
+    color: $color-basic-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+input[type="radio"] {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $color-special-grey;
+  border-radius: 50%;
+  background-color: $color-basic-white;
+  margin: 0;
+  margin-right: 15px;
+
+  &:hover {
+    border: 1px solid $color-border-grey-dark;
+  }
+
+  &:disabled,
+  &:disabled + span {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+input[type="radio"]:checked {
+  background-color: $color-basic-green;
+  box-shadow: inset 0 0 0 7px #ffffff;
+
+  @media (min-width: $tablet-width) {
+    box-shadow: inset 0 0 0 10px #ffffff;
+  }
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $color-special-grey;
+  background-color: $color-basic-white;
+  margin: 0;
+  margin-right: 15px;
+
+  &:hover {
+    border: 1px solid $color-border-grey-dark;
+  }
+
+  &:disabled,
+  &:disabled + span {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
+}
+
+input[type="checkbox"]:checked {
+  background-image: url("../../icons/vector.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px 14px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 24px 19px;
+  }
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+}
