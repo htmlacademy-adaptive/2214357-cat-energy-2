@@ -2,11 +2,11 @@
   background: $bg-special-grey;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(to bottom, $color-basic-white 0%, $color-basic-white 55%, $bg-special-grey 55%, $bg-special-grey 100%);
+    background: linear-gradient(to bottom, $color-basic-white, $color-basic-white 575px, $bg-special-grey 575px, $bg-special-grey 100%);
   }
 
   @media (min-width: $desktop-width) {
-    background: linear-gradient(to bottom, $color-basic-white 0%, $color-basic-white 23%, $bg-special-grey 23%, $bg-special-grey 100%);
+    background: linear-gradient(to bottom, $color-basic-white, $color-basic-white 135px, $bg-special-grey 135px, $bg-special-grey 100%);
   }
 }
 
@@ -47,7 +47,7 @@
   }
 }
 
-.advantages-list {
+.advantages__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 32px;

@@ -81,7 +81,8 @@
     background-size: 67px 50px;
     position: absolute;
     top: 24px;
-    left: 12px;
+    margin-left: -8px;
+
 
     @media (min-width: $tablet-width) {
       width: 268px;
@@ -89,7 +90,7 @@
       background-size: 268px 200px;
       position: absolute;
       top: 90px;
-      left: 411px;
+      right: 29px;
       margin-bottom: 0;
     }
 
@@ -159,6 +160,10 @@
     opacity: 0.8;
   }
 
+  &:hover::after {
+    mask-image: url("../../icons/programs-link-big.svg");
+  }
+
   &:focus-visible {
     opacity: 0.6;
   }
@@ -179,7 +184,6 @@
     height: 10px;
     mask-image: url("../../icons/programs-link.svg");
     mask-repeat: no-repeat;
-    background-size: 32px 10px;
     background-color: $color-basic-black;
     position: absolute;
     top: 7px;

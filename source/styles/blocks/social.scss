@@ -38,7 +38,8 @@
     --images: url("../../icons/stack.svg#telegram");
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $color-basic-green;
   }
 

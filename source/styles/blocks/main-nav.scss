@@ -5,10 +5,13 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 5px;
+    margin-top: 5px;
   }
 
   @media (min-width: $desktop-width) {
     margin-right: 1px;
+    max-width: 600px;
+    margin-top: 10px;
   }
 
   &--programs {
